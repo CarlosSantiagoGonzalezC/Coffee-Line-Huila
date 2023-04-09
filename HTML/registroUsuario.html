@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro usuario</title>
+    <link rel="shortcut icon" href="/IMG/logoCoffee.png">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- -------------------- Sweet alert -------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/registroUsuario.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="/IMG/logoCoffee.png" alt="logo" class="logo">
+    </header>
+
+    <nav>
+        <div class="navegacion">
+            <a href="/HTML/inicio.html">
+                <i class="fa fa-home"></i> Inicio
+            </a>
+            <a href="#">
+                <i class="fa fa-coffee"></i> Café especial
+            </a>
+            <a href="#">
+                <i class="fa fa-tag"></i> Ofertas
+            </a>
+            <a href="#">
+                <i class="fa fa-star"></i> Destacados
+            </a>
+            <a href="#">
+                <i class="fa fa-plus-square"></i>
+                Otros
+            </a>
+            <a href="">
+                <i class="fa fa-question-circle"></i> Ayuda
+            </a>
+        </div>
+        <div class="login">
+
+            <div class="dropdown">
+                <button class="drop-btn">
+                    Registrarse
+                </button>
+                <div class="dropdown-content">
+                    <a href="/HTML/registroUsuario.html">Como usuario</a>
+                    <a href="/HTML/registroVendedor.html">Como vendedor</a>
+                </div>
+            </div>
+
+            <a href="/HTML/inicioSesion.html" id="btnIngresar">Ingresar</a>
+
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h1>REGISTRO USUARIO</h1>
+
+            <div id="conte">
+                <div id="logoForm">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="slider">
+                    <div id="formulario">
+                        <div>
+                            <label for="txtNombres">Nombres:</label><br>
+                            <input type="text" id="txtNombres" required><br>
+                            <label for="txtCorreo">Correo electronico:</label><br>
+                            <input type="email" id="txtCorreo" required><br>
+                            <label for="txtConfPass">Confirmar contraseña:</label><br>
+                            <input type="password" id="txtConfContra" required><br>
+                        </div>
+                        <div>
+                            <label for="txtApellidos">Apellidos:</label><br>
+                            <input type="text" id="txtApellidos" required><br>
+                            <label for="txtPassword">Contraseña:</label><br>
+                            <input type="password" id="txtPassword" required><br>
+                            <div class="g-recaptcha" data-sitekey="6LfGXWYlAAAAAHqCvlXfzzcM33f8CWYzi00xCzFj"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="botones">
+                    <button id="btnRegistrarse" onclick="registrar()">Registrarse</button>
+                    <button id="btnCancelar">Cancelar</button>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <div id="texto1">
+            <h3>Todos los derechos reservados
+                <i class="fa far fa-copyright"></i></h3> 
+        </div>
+
+        <div id="info">
+            <div>
+                <h3>Información:</h3>
+                <p>
+                <ul>
+                    <li>Cra 5 #14-22</li>
+                    <li>sc805036@gmail.com</li>
+                    <li>+57 3136998962</li>
+                    <li>SENA Industrial</li>
+                    <li>Neiva - Huila</li>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <h3>Navegador:</h3>
+                <p>
+                <ul>
+                    <li><a href="/HTML/inicio.html" id="enlaces"><i class="fa fa-home"></i> Inicio</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-coffee"></i> Café especial</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-tag"></i> Ofertas</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-star"></i> Destacados</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-plus-square"></i> Otros</a></li>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <h3>Redes sociales:</h3>
+                <p>
+                <ul>
+                    <li><a href="" id="enlaces"><i class="fa fa-facebook"></i> CoffeeLineHuila</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-twitter"></i> @CoffeeLineHuila</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-github"></i> CoffeeLineHuila</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-instagram"></i> @CoffeeLineHuila.oficial</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-whatsapp"></i> +57 3125584562</a></li>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <h3>Politica de privacidad:</h3>
+                <p>
+                <ul>
+                    <li><a href="" id="enlaces">Licencias</a></li>
+                    <li><a href="" id="enlaces">Politicas</a></li>
+                    <li><a href="" id="enlaces">Permisos</a></li>
+                    <li><a href="" id="enlaces">Ayudas</a></li>
+                    <li><a href="" id="enlaces">Utilidades</a></li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/JS/registroUsuario.js"></script>
+</body>
+
+</html>

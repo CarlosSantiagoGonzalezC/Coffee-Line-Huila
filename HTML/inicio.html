@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="shortcut icon" href="/IMG/logoCoffee.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/inicio.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="/IMG/logoCoffee.png" alt="logo" class="logo">
+    </header>
+
+    <nav>
+        <div class="navegacion">
+            <a href="/HTML/inicio.html" class="select">
+                <i class="fa fa-home"></i> Inicio
+            </a>
+            <a href="#">
+                <i class="fa fa-coffee"></i> Café especial
+            </a>
+            <a href="#">
+                <i class="fa fa-tag"></i> Ofertas
+            </a>
+            <a href="#">
+                <i class="fa fa-star"></i> Destacados
+            </a>
+            <a href="#">
+                <i class="fa fa-plus-square"></i>
+                Otros
+            </a>
+            <a href="">
+                <i class="fa fa-question-circle"></i> Ayuda
+            </a>
+        </div>
+        <div class="login">
+
+            <div class="dropdown">
+                <button class="drop-btn">
+                    Registrarse
+                </button>
+                <div class="dropdown-content">
+                    <a href="/HTML/registroUsuario.html">Como usuario</a>
+                    <a href="/HTML/registroVendedor.html">Como vendedor</a>
+                </div>
+            </div>
+
+            <a href="/HTML/inicioSesion.html" id="btnIngresar">Ingresar</a>
+
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h1>COFFEE LINE HUILA</h1>
+
+            <div class="slider">
+
+                <div class="buton-slide">
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+
+                </div>
+
+                <div class="slide">
+                    <p>
+                        Coffee Line Huila te ofrece la oportunidad de adquirir el café especial de tu gusto
+                        a excelentes precios, además que podras tomar información de las fincas donde se cultivan
+                        estos productos y aprender más de este grandioso café.
+                    </p>
+                    <img src="/IMG/cafe1.png" id="imagen">
+                </div>
+
+                <div class="slide">
+                    <p>
+                        Además, en Coffee Line Huila, tendras la dicha de poder conocer un poco más de la historia
+                        de las fincas cafeteras, con imagenes que probablemente no hayas visto de estso lugares tan
+                        espectaculares donde se produce este gran producto insignia de nuestro país colombiano.
+                    </p>
+                    <img src="/IMG/finca.jpg" id="imagen">
+                </div>
+
+                <div class="slide">
+                    <p>
+                        En nuestra plataforma web tambien podras encontrar productos derivados del café donde tendrás
+                        gran variedad de productos como vinos, galletas, dulces, entre otros muchos más que seguramente
+                        serán irresistibles para ti, ya que son de gran calidad y excelente sabor para una mayor
+                        experiencia
+                        deleitiva.
+                    </p>
+                    <img src="/IMG/cafe2.jpg" id="imagen">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="texto1">
+            <h3>Todos los derechos reservados
+                <i class="fa far fa-copyright"></i></h3> 
+        </div>
+
+        <div id="info">
+            <div>
+                <h3>Información:</h3>
+                <p>
+                <ul>
+                    <li>Cra 5 #14-22</li>
+                    <li>sc805036@gmail.com</li>
+                    <li>+57 3136998962</li>
+                    <li>SENA Industrial</li>
+                    <li>Neiva - Huila</li>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <h3>Navegador:</h3>
+                <p>
+                <ul>
+                    <li><a href="/HTML/inicio.html" id="enlaces"><i class="fa fa-home"></i> Inicio</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-coffee"></i> Café especial</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-tag"></i> Ofertas</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-star"></i> Destacados</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-plus-square"></i> Otros</a></li>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <h3>Redes sociales:</h3>
+                <p>
+                <ul>
+                    <li><a href="" id="enlaces"><i class="fa fa-facebook"></i> CoffeeLineHuila</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-twitter"></i> @CoffeeLineHuila</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-github"></i> CoffeeLineHuila</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-instagram"></i> @CoffeeLineHuila.oficial</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-whatsapp"></i> +57 3125584562</a></li>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <h3>Politica de privacidad:</h3>
+                <p>
+                <ul>
+                    <li><a href="" id="enlaces">Licencias</a></li>
+                    <li><a href="" id="enlaces">Politicas</a></li>
+                    <li><a href="" id="enlaces">Permisos</a></li>
+                    <li><a href="" id="enlaces">Ayudas</a></li>
+                    <li><a href="" id="enlaces">Utilidades</a></li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/JS/inicio.js"></script>
+</body>
+
+</html>
