@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi finca/empresa</title>
+    <link rel="shortcut icon" href="/IMG/logoCoffee.png">
+    <!-- -------------------- Sweet alert -------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/CSS/empresaVendedor.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="/IMG/logoCoffee.png" alt="logo" class="logo">
+    </header>
+
+    <nav>
+        <div class="navegacion">
+            <a href="/HTML/inicioVendedor.html">
+                <i class="fa fa-home"></i> Inicio
+            </a>
+            <a href="/HTML/agregarProducto.html">
+                <i class="fa fa-plus-square"></i> Agregar
+            </a>
+            <a href="/HTML/modificarProducto.html">
+                <i class="fa fa-edit"></i> Modificar
+            </a>
+            <a href="/HTML/desactivarProducto.html">
+                <i class="fa fa-minus-square"></i> Desactivar
+            </a>
+            <a href="">
+                <i class="fa fa-question-circle"></i> Ayuda
+            </a>
+        </div>
+        <div class="opcVendedor">
+
+            <div class="dropdown">
+                <button class="drop-btn">
+                    <i class="fa fa-user-circle"></i>
+                </button>
+                <div class="dropdown-content">
+
+                </div>
+            </div>
+
+            <a href="/HTML/empresaVendedor.html" id="btnFinca"><i class="fa fa-home"></i></a>
+
+        </div>
+    </nav>
+
+    <main>
+        <section>
+            <h1>MI FINCA/EMPRESA</h1>
+
+            <div id="conte">
+                <div id="formAgregar">
+                    <div id="logoForm">
+                        <i class="fa fa-home"></i>
+                    </div>
+
+                    <div class="slider">
+                        <div id="formulario">
+                            <div>
+                                <label for="txtNomEmpresa">Nombre de la empresa:</label><br>
+                                <input type="text" id="txtNomEmpresa" required><br>
+                                <label for="fileImagen">Imagen:</label><br>
+                                <input type="file" id="fileImagen" required><br>
+                            </div>
+                            <div>
+                                <label for="txtHistoria">Historia o información de la finca/empresa:</label><br>
+                                <textarea name="txtHistoria" id="txtHistoria" cols="40" rows="6"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <br>
+                    <div class="contacto">
+                        <div id="formContacto">
+                            <div>
+                                <label for="txtMunicipio">Municipio:</label><br>
+                                <input type="text" id="txtMunicipio" required><br>
+                                <label for="txtTelefono">Telefono:</label><br>
+                                <input type="number" id="txtTelefono" required><br>
+                            </div>
+                            <div>
+                                <label for="txtDireccion">Dirección:</label><br>
+                                <input type="text" id="txtDireccion" required><br>
+                                <label for="txtCorreo">Correo electronico:</label><br>
+                                <input type="email" id="txtCorreo" required><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="botones">
+                        <button id="btnGuardar" onclick="guardar()">Guardar</button>
+                        <button id="btnCancelar">Cancelar</button>
+                    </div>
+                </div>
+                <div id="infoEmpresa">
+                    <h1>Cafeteros Huilenses</h1>
+                    <div id="descrip">
+                        <div>
+                            <img src="/IMG/finca.jpg" alt="" style="width: 250px;" id="imgFinca">
+                        </div>
+                        <div>
+                            <p>En cafeteros huilenses contamos con la mejor finca cafetera del Huila, la cual
+                                da sus inicios en 1989 con la curiosa finalidad de ser tomada para otras funcionalidades
+                                pero que al ver las tierras perfectas que la rodeaban, fue adaptada para la cosecha de
+                                café.
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div id="infoFinca">
+                        <div>
+                            <h2>Información empresa:</h2>
+                            <p>
+                            <ul>
+                                <li>Municipio: Rivera</li>
+                                <li>Dirección: Cra 50B #78-58</li>
+                                <li>Telefono: 3254859865</li>
+                                <li>Correo electronico: cafeteroshuila@gmail.com</li>
+                            </ul>
+                            </p>
+                        </div>
+                        <div>
+                            <h2>Información vendedor:</h2>
+                            <p>
+                            <ul>
+                                <li>Nombre: Sebastian Gomez</li>
+                                <li>Telefono: 3254859865</li>
+                                <li>Ciudad: Neiva</li>
+                                <li>Correo electronico: sebas@gmail.com</li>
+                            </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="botones">
+                        <button id="btnModalEditar"><i class="fa fa-edit"></i></button>
+                        <button id="btnVolver">Volver</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Actualizar datos <i class="fa fa-edit"></i></h2>
+            </div>
+            <div class="modal-body">
+                <div class="modalConte">
+                    <div class="slider">
+                        <div id="formularioModal">
+                            <div id="lado1">
+                                <label for="txtNomEmpresa">Nombre de la empresa:</label><br>
+                                <input type="text" id="txtNomEmpresa" value="Cafeteros Huilenses" required><br>
+                                <label for="fileImagen">Imagen:</label><br>
+                                <input type="file" id="fileImagen" value="/IMG/finca.jpg" required><br>
+                                <label for="txtMunicipio">Municipio:</label><br>
+                                <input type="text" id="txtMunicipio" value="Rivera" required><br>
+                                <label for="txtTelefono">Telefono:</label><br>
+                                <input type="number" id="txtTelefono" value="3254859865" required><br>
+                            </div>
+                            <div id="lado2">
+                                <label for="txtHistoria">Historia o información de la finca/empresa:</label><br>
+                                <textarea name="txtHistoria" id="txtHistoria" cols="40" rows="6" value=""></textarea><br>
+                                <label for="txtDireccion">Dirección:</label><br>
+                                <input type="text" id="txtDireccion" value="Cra 50B #78-58" required><br>
+                                <label for="txtCorreo">Correo electronico:</label><br>
+                                <input type="email" id="txtCorreo" value="cafeteroshuila@gmail.com" required><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="botones">
+                    <button id="btnActualizar" onclick="actualizar()">Actualizar</button>
+                    <button class="cancelar">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div id="texto1">
+            <h3>Todos los derechos reservados
+                <i class="fa far fa-copyright"></i>
+            </h3>
+        </div>
+
+        <div id="info">
+            <div>
+                <h3>Información:</h3>
+                <p>
+                <ul>
+                    <li>Cra 5 #14-22</li>
+                    <li>sc805036@gmail.com</li>
+                    <li>+57 3136998962</li>
+                    <li>SENA Industrial</li>
+                    <li>Neiva - Huila</li>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <h3>Navegador:</h3>
+                <p>
+                <ul>
+                    <li><a href="/HTML/inicioVendedor.html" id="enlaces"><i class="fa fa-home"></i> Inicio</a></li>
+                    <li><a href="/HTML/agregarProducto.html" id="enlaces"><i class="fa fa-plus-square"></i> Agregar</a>
+                    </li>
+                    <li><a href="/HTML/modificarProducto.html" id="enlaces"><i class="fa fa-edit"></i> Modificar</a>
+                    </li>
+                    <li><a href="/HTML/desactivarProducto.html" id="enlaces"><i class="fa fa-minus-square"></i>
+                            Desactivar</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-question-circle"></i> Ayuda</a></li>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <h3>Redes sociales:</h3>
+                <p>
+                <ul>
+                    <li><a href="" id="enlaces"><i class="fa fa-facebook"></i> CoffeeLineHuila</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-twitter"></i> @CoffeeLineHuila</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-github"></i> CoffeeLineHuila</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-instagram"></i> @CoffeeLineHuila.oficial</a></li>
+                    <li><a href="" id="enlaces"><i class="fa fa-whatsapp"></i> +57 3125584562</a></li>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <h3>Politica de privacidad:</h3>
+                <p>
+                <ul>
+                    <li><a href="" id="enlaces">Licencias</a></li>
+                    <li><a href="" id="enlaces">Politicas</a></li>
+                    <li><a href="" id="enlaces">Permisos</a></li>
+                    <li><a href="" id="enlaces">Ayudas</a></li>
+                    <li><a href="" id="enlaces">Utilidades</a></li>
+                </ul>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/JS/empresaVendedor.js"></script>
+</body>
+
+</html>
