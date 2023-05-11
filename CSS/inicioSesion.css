@@ -144,8 +144,8 @@ h1 {
 }
 
 #conte{
-    width: 75%;
-    height: 75vh;
+    width: 30%;
+    height: 50vh;
     background: #da9f68;
     border-radius: 5px;
 }
@@ -196,7 +196,7 @@ footer{
     background-color: #331b05;
     color: #f0e6dc;
     margin-top: 20px;
-    height: 40vh;
+    height: 30vh;
 }
 
 #texto1{

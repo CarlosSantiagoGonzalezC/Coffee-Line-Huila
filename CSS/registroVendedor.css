@@ -115,7 +115,7 @@ button:hover, #btnIngresar:hover {
 /** main */
 
 main {
-    min-height: 600px;
+    height: 60%;
     width: 80%;
     margin: auto;
 }
@@ -144,8 +144,8 @@ h1 {
 }
 
 #conte{
-    width: 100%;
-    height: 105vh;
+    width: 80%;
+    height: 65vh;
     background: #da9f68;
     border-radius: 5px;
 }
@@ -199,8 +199,8 @@ input{
 footer{
     background-color: #331b05;
     color: #f0e6dc;
-    margin-top: 150px;
-    height: 40vh;
+    margin-top: 20px;
+    height: 30vh;
 }
 
 #texto1{

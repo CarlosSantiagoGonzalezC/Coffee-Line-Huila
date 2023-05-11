@@ -3,23 +3,20 @@ document.getElementById("btnCancelar").onclick = function () {
 }
 
 function iniciar() {
-    Swal.fire(
-        'Sesion iniciada!',
-        'Ha iniciado sesion correctamente!',
-        'success'
-    )
-    
-    let correo = document.getElementById("txtCorreo").value;
-    let password = document.getElementById("txtPassword").value;
+    Swal.fire({
+        title: 'Sesion iniciada!',
+        text: 'Ha iniciado sesion correctamente!',
+        icon: 'success',
+        showConfirmButton: false,
+        timer: 1500
+    }).then((result) => {
+        let correo = document.getElementById("txtCorreo").value;
+        let password = document.getElementById("txtPassword").value;
 
-    if (correo == "sc805036@gmail.com" && password == "123456") {
-        setTimeout(function(){
+        if (correo == "sc805036@gmail.com" && password == "123456") {
             location.href = "/HTML/inicioVendedor.html";
-        }, 3000)
-    } else if (correo == "andres@gmail.com" && password == "123456"){
-        setTimeout(function(){
+        } else if (correo == "andres@gmail.com" && password == "123456") {
             location.href = "/HTML/inicioUsuario.html";
-        }, 3000)
-    }
-    
+        }
+    })
 }
