@@ -144,8 +144,8 @@ h1 {
 }
 
 #conte{
-    width: 60%;
-    height: 55vh;
+    width: 80%;
+    min-height: 55vh;
     background: #da9f68;
     border-radius: 5px;
     margin-bottom: 40px;
@@ -168,6 +168,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px 0;
 }
 
 /*---- ESTILO DE CAJA DE TEXTOS ----*/
@@ -179,6 +180,10 @@ input, textarea{
     margin-top: 6px;
     margin-bottom: 16px;
     width: 300px;
+}
+
+textarea{
+    resize: vertical;
 }
 
 #fileImagen{

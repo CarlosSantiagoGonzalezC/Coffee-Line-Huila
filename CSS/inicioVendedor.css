@@ -117,7 +117,7 @@ button:hover,
 /** main */
 
 main {
-    min-height: 600px;
+    min-height: 500px;
     width: 80%;
     margin: auto;
 }
@@ -233,7 +233,7 @@ h1 {
 footer {
     background-color: #331b05;
     color: #f0e6dc;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 30vh;
 }
 
