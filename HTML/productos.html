@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
     <header>
         <img src="/IMG/logoCoffee.png" alt="logo" class="logo">
     </header>
@@ -36,7 +35,11 @@
             </a>
         </div>
         <div class="opcUser">
-
+            <a href="/HTML/carrito.html">
+                <button>
+                    <i class="fa fa-shopping-cart"></i>
+                </button>
+            </a>
             <div class="dropdown">
                 <button class="drop-btn">
                     <i class="fa fa-user-circle"></i>
@@ -57,56 +60,27 @@
                     </div>
                 </div>
             </div>
-            <a href="/HTML/carrito.html" id="btnCarrito"><i class="fa fa-home"></i></a>
         </div>
     </nav>
 
     <main>
         <section>
-            <h1>COFFEE LINE HUILA</h1>
-
-            <div class="slider">
-
-                <div class="buton-slide">
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                    <div class="dot-container">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
+            <div class="search">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="search">
+                <i class="fa fa-filter" aria-hidden="true"></i>
+            </div>
+            <div class="categoria">
+                <h1>Más Vendidos</h1>
+                <div class="productos">
+                    <div class="producto">
+                        <img src="/IMG/cafe1.png" alt="">
+                        <div class="info-producto">
+                            <p >Q.coffe Gran Reserva Luxury</p>
+                            <p >250 Gr</p>
+                            <p >$80.000</p>
+                        </div>
                     </div>
-
-                </div>
-
-                <div class="slide">
-                    <p>
-                        Coffee Line Huila te ofrece la oportunidad de adquirir el café especial de tu gusto
-                        a excelentes precios, además que podras tomar información de las fincas donde se cultivan
-                        estos productos y aprender más de este grandioso café.
-                    </p>
-                    <img src="/IMG/cafe1.png" id="imagen">
-                </div>
-
-                <div class="slide">
-                    <p>
-                        Además, en Coffee Line Huila, tendras la dicha de poder conocer un poco más de la historia
-                        de las fincas cafeteras, con imagenes que probablemente no hayas visto de estso lugares tan
-                        espectaculares donde se produce este gran producto insignia de nuestro país colombiano.
-                    </p>
-                    <img src="/IMG/finca.jpg" id="imagen">
-                </div>
-
-                <div class="slide">
-                    <p>
-                        En nuestra plataforma web tambien podras encontrar productos derivados del café donde tendrás
-                        gran variedad de productos como vinos, galletas, dulces, entre otros muchos más que seguramente
-                        serán irresistibles para ti, ya que son de gran calidad y excelente sabor para una mayor
-                        experiencia
-                        deleitiva.
-                    </p>
-                    <img src="/IMG/cafe2.jpg" id="imagen">
                 </div>
             </div>
         </section>
@@ -118,7 +92,6 @@
                 <i class="fa far fa-copyright"></i>
             </h3>
         </div>
-
         <div id="info">
             <div>
                 <h3>Información:</h3>
@@ -173,8 +146,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="/JS/inicio.js"></script>
 </body>
 
 </html>

@@ -218,17 +218,17 @@ footer {
     color: #f0e6dc;
 }
 
-.dropdown button{
+.dropdown button {
     font-size: small;
 }
 
-.user-foto img{
+.user-foto img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
 
-.options{
+.options {
     display: flex;
     margin: 5px 0px;
 }
@@ -239,14 +239,14 @@ footer {
     justify-content: center;
 }
 
-.divisas{
+.divisas {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.divisas img{
+.divisas img {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 5px;

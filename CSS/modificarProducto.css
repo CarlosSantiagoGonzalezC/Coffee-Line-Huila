@@ -272,27 +272,28 @@ th {
     padding: 16px 16px;
 }
 
-.modalConte{
+.modalConte {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#formulario{
+#formulario {
     width: 75%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-#botones{
+#botones {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 /*---- ESTILO DE CAJA DE TEXTOS ----*/
-input, textarea{
+input,
+textarea {
     padding: 12px;
     border: 1px solid rgb(165, 165, 165);
     border-radius: 4px;
@@ -302,7 +303,7 @@ input, textarea{
     width: 300px;
 }
 
-#fileImagen{
+#fileImagen {
     background-color: white;
 }
 
@@ -333,17 +334,17 @@ footer {
 }
 
 
-.dropdown button{
+.dropdown button {
     font-size: small;
 }
 
-.user-foto img{
+.user-foto img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
 
-.options{
+.options {
     display: flex;
     margin: 5px 0px;
 }
@@ -354,14 +355,14 @@ footer {
     justify-content: center;
 }
 
-.divisas{
+.divisas {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.divisas img{
+.divisas img {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 5px;

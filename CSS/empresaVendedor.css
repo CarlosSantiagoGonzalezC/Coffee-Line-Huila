@@ -53,7 +53,8 @@ nav {
 
 /** botones */
 
-button, #btnFinca {
+button,
+#btnFinca {
     text-decoration: none;
     margin-right: 10px;
     background-color: #80562f;
@@ -65,7 +66,8 @@ button, #btnFinca {
     font-size: 17px;
 }
 
-button:hover, #btnFinca:hover {
+button:hover,
+#btnFinca:hover {
     background-color: #9b7c5f;
 }
 
@@ -121,7 +123,7 @@ main {
     margin: auto;
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,7 +137,7 @@ h1 {
 }
 
 /** slider */
-#logoForm{
+#logoForm {
     margin-top: 20px;
     display: flex;
     align-items: center;
@@ -144,7 +146,7 @@ h1 {
     color: #331b05;
 }
 
-#conte{
+#conte {
     width: 100%;
     min-height: 30vh;
     background: #da9f68;
@@ -152,36 +154,39 @@ h1 {
     margin-bottom: 40px;
 }
 
-.slider, .contacto {
+.slider,
+.contacto {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-hr{
+hr {
     width: 80%;
 }
 
-#formulario, #formContacto{
+#formulario,
+#formContacto {
     width: 75%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-#formularioModal{
+#formularioModal {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-#lado1, #lado2{
+#lado1,
+#lado2 {
     margin-left: 20px;
     margin-right: 20px;
 }
 
-#botones{
+#botones {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,7 +194,8 @@ hr{
 }
 
 /*---- ESTILO DE CAJA DE TEXTOS ----*/
-input, textarea{
+input,
+textarea {
     padding: 12px;
     border: 1px solid rgb(165, 165, 165);
     border-radius: 4px;
@@ -199,13 +205,14 @@ input, textarea{
     width: 300px;
 }
 
-#fileImagen{
+#fileImagen {
     background-color: white;
 }
 
 @keyframes fade {
     from {
-        opacity: 0.9    }
+        opacity: 0.9
+    }
 
     to {
         opacity: 1
@@ -292,18 +299,18 @@ input, textarea{
     padding: 16px 16px;
 }
 
-.modalConte{
+.modalConte {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 /*---- OCULTA OPCION ----*/
-#infoEmpresa{
+#infoEmpresa {
     display: none;
 }
 
-#descrip{
+#descrip {
     margin-left: 150px;
     margin-right: 150px;
     display: flex;
@@ -311,12 +318,12 @@ input, textarea{
     justify-content: space-around;
 }
 
-#imgFinca{
+#imgFinca {
     border-radius: 20px;
     margin-right: 20px;
 }
 
-#infoFinca{
+#infoFinca {
     margin-left: 100px;
     margin-right: 100px;
     display: flex;
@@ -326,41 +333,41 @@ input, textarea{
 
 /** footer */
 
-footer{
+footer {
     background-color: #331b05;
     color: #f0e6dc;
     margin-top: 20px;
     min-height: 10vh;
 }
 
-#texto1{
+#texto1 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#info{
+#info {
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
-#enlaces{
+#enlaces {
     text-decoration: none;
     color: #f0e6dc;
 }
 
-.dropdown button{
+.dropdown button {
     font-size: small;
 }
 
-.user-foto img{
+.user-foto img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
 
-.options{
+.options {
     display: flex;
     margin: 5px 0px;
 }
@@ -371,14 +378,14 @@ footer{
     justify-content: center;
 }
 
-.divisas{
+.divisas {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.divisas img{
+.divisas img {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 5px;
