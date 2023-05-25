@@ -5,12 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agregar producto</title>
+    <title>Inicio</title>
     <link rel="shortcut icon" href="/IMG/logoCoffee.png">
-    <!-- -------------------- Sweet alert -------------------- -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/CSS/agregarProducto.css">
+    <link rel="stylesheet" href="/CSS/productos.css">
 </head>
 
 <body>
@@ -21,23 +19,23 @@
 
     <nav>
         <div class="navegacion">
-            <a href="/HTML/inicioVendedor.html">
+            <a href="/HTML/inicio.html" class="select">
                 <i class="fa fa-home"></i> Inicio
             </a>
-            <a href="/HTML/agregarProducto.html" class="select">
-                <i class="fa fa-plus-square"></i> Agregar
+            <a href="/HTML/productos.html">
+                <i class="fa fa-plus-square"></i> Cafe Premium
             </a>
-            <a href="/HTML/modificarProducto.html">
-                <i class="fa fa-edit"></i> Modificar
+            <a href="/HTML/productos.html">
+                <i class="fa fa-edit"></i> Cafe Especial
             </a>
-            <a href="/HTML/desactivarProducto.html">
-                <i class="fa fa-minus-square"></i> Desactivar
+            <a href="/HTML/productos.html">
+                <i class="fa fa-minus-square"></i> Derivados
             </a>
             <a href="">
                 <i class="fa fa-question-circle"></i> Ayuda
             </a>
         </div>
-        <div class="opcVendedor">
+        <div class="opcUser">
 
             <div class="dropdown">
                 <button class="drop-btn">
@@ -57,52 +55,58 @@
                             Salir
                         </button>
                     </div>
-                    <div class="divisas">
-                        <img src="/IMG/divisas.png" alt="divisas">
-                        <button>
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                            Historial
-                        </button>
-                    </div>
                 </div>
             </div>
-
-            <a href="/HTML/empresaVendedor.html" id="btnFinca"><i class="fa fa-home"></i></a>
-
+            <a href="/HTML/carrito.html" id="btnCarrito"><i class="fa fa-home"></i></a>
         </div>
     </nav>
 
     <main>
         <section>
-            <h1>AGREGAR PRODUCTO</h1>
+            <h1>COFFEE LINE HUILA</h1>
 
-            <div id="conte">
-                <div id="logoForm">
-                    <i class="fa fa-plus-square"></i>
-                </div>
-                <div class="slider">
-                    <div id="formulario">
-                        <div>
-                            <label for="txtNombre">Nombre:</label><br>
-                            <input type="text" id="txtNombre" required><br>
-                            <label for="txtDescripcion">Descripción:</label><br>
-                            <textarea name="txtDescripcion" id="txtDescripcion" cols="40" rows="10"></textarea>
-                        </div>
-                        <div>
-                            <label for="txtCodigo">Codigo:</label><br>
-                            <input type="number" id="txtCodigo" required><br>
-                            <label for="txtCantDisponibles">Cantidades disponibles:</label><br>
-                            <input type="number" id="txtCantDisponibles" required><br>
-                            <label for="txtPrecio">Precio:</label><br>
-                            <input type="number" id="txtPrecio" required><br>
-                            <label for="fileImagen">Imagen:</label><br>
-                            <input type="file" id="fileImagen" required><br>
-                        </div>
+            <div class="slider">
+
+                <div class="buton-slide">
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="dot-container">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
                     </div>
+
                 </div>
-                <div id="botones">
-                    <button id="btnAgregar" onclick="agregar()">Agregar</button>
-                    <button id="btnCancelar">Cancelar</button>
+
+                <div class="slide">
+                    <p>
+                        Coffee Line Huila te ofrece la oportunidad de adquirir el café especial de tu gusto
+                        a excelentes precios, además que podras tomar información de las fincas donde se cultivan
+                        estos productos y aprender más de este grandioso café.
+                    </p>
+                    <img src="/IMG/cafe1.png" id="imagen">
+                </div>
+
+                <div class="slide">
+                    <p>
+                        Además, en Coffee Line Huila, tendras la dicha de poder conocer un poco más de la historia
+                        de las fincas cafeteras, con imagenes que probablemente no hayas visto de estso lugares tan
+                        espectaculares donde se produce este gran producto insignia de nuestro país colombiano.
+                    </p>
+                    <img src="/IMG/finca.jpg" id="imagen">
+                </div>
+
+                <div class="slide">
+                    <p>
+                        En nuestra plataforma web tambien podras encontrar productos derivados del café donde tendrás
+                        gran variedad de productos como vinos, galletas, dulces, entre otros muchos más que seguramente
+                        serán irresistibles para ti, ya que son de gran calidad y excelente sabor para una mayor
+                        experiencia
+                        deleitiva.
+                    </p>
+                    <img src="/IMG/cafe2.jpg" id="imagen">
                 </div>
             </div>
         </section>
@@ -111,7 +115,8 @@
     <footer>
         <div id="texto1">
             <h3>Todos los derechos reservados
-                <i class="fa far fa-copyright"></i></h3> 
+                <i class="fa far fa-copyright"></i>
+            </h3>
         </div>
 
         <div id="info">
@@ -132,9 +137,12 @@
                 <p>
                 <ul>
                     <li><a href="/HTML/inicioVendedor.html" id="enlaces"><i class="fa fa-home"></i> Inicio</a></li>
-                    <li><a href="/HTML/agregarProducto.html" id="enlaces"><i class="fa fa-plus-square"></i> Agregar</a></li>
-                    <li><a href="/HTML/modificarProducto.html" id="enlaces"><i class="fa fa-edit"></i> Modificar</a></li>
-                    <li><a href="/HTML/desactivarProducto.html" id="enlaces"><i class="fa fa-minus-square"></i> Desactivar</a></li>
+                    <li><a href="/HTML/agregarProducto.html" id="enlaces"><i class="fa fa-plus-square"></i> Agregar</a>
+                    </li>
+                    <li><a href="/HTML/modificarProducto.html" id="enlaces"><i class="fa fa-edit"></i> Modificar</a>
+                    </li>
+                    <li><a href="/HTML/desactivarProducto.html" id="enlaces"><i class="fa fa-minus-square"></i>
+                            Desactivar</a></li>
                     <li><a href="" id="enlaces"><i class="fa fa-question-circle"></i> Ayuda</a></li>
                 </ul>
                 </p>
@@ -166,7 +174,7 @@
         </div>
     </footer>
 
-    <script src="/JS/agregarProducto.js"></script>
+    <script src="/JS/inicio.js"></script>
 </body>
 
 </html>
