@@ -179,6 +179,7 @@ section img{
     align-items: center;
     justify-content: space-evenly;
     width: 90%;
+    padding: 10px 0px;
 }
 
 .fotos-producto {
