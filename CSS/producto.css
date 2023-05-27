@@ -108,7 +108,7 @@ button:hover {
     color: #e7e7e7;
 }
 
-.user-foto img {
+.user-foto {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -168,10 +168,6 @@ section {
     width: 80%;
     background-color: #da9f68;
     border-radius: 5px;
-}
-
-section img{
-    height: 300px;
 }
 
 .producto {
@@ -289,4 +285,103 @@ section img{
 
 .garantia {
     justify-content: center;
+}
+
+/** finca */
+.finca {
+    background: #80562f;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+.info-finca {
+    font-weight: 550;
+    width: 50%;
+}
+
+.finca img {
+    height: 30vh;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+/** input del comentario */
+.input-comentario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#comentario {
+    padding: 10px;
+    width: 80%;
+    min-height: 10vh;
+    padding: 10px 40px;
+    font-size: 18px;
+    border: solid 1px #202020;
+    margin: 5px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    resize: vertical;
+}
+
+#comentario:focus {
+    outline: none;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(0, 140, 255, 0.6);
+}
+
+.butons-comentario {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 85%;
+}
+
+.container-comentarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.comentario {
+    background: #ebd3b5;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+
+.user-coment {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 5px 0px;
+}
+
+.user-coment p{
+    margin-left: 5px;
+}
+.coment {
+    background: #ffffff;
+    width: 90%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.coment p{
+    margin: 20px;
 }

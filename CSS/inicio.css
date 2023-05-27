@@ -1,21 +1,21 @@
 * {
-    font-family: 'Lucida Sans';
+    font-family: 'Lucida Sans', Geneva, sans-serif;
+    text-decoration: none;
+    color: #331b05;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     background-image: url(/IMG/fondo.jpeg);
     background-position: center;
-    margin: 0;
-    padding: 0;
 }
 
 /** encabezado */
-
 header {
     text-align: center;
     background: #e7e7e7;
 }
-
 
 .logo {
     padding: 10px;
@@ -23,20 +23,20 @@ header {
 }
 
 /** barra de navegacion */
-
 nav {
+    position: sticky;
+    top: 0px;
     background: #da9f68;
     display: flex;
     height: 50px;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+    z-index: 2;
 }
 
 .navegacion a {
-    color: #331b05;
     text-align: center;
-    text-decoration: none;
     padding: 15px 16px;
     font-size: 17px;
 }
@@ -115,7 +115,7 @@ button:hover, #btnIngresar:hover {
 /** main */
 
 main {
-    min-height: 600px;
+    min-height: 50vh;
     width: 80%;
     margin: auto;
 }
@@ -226,26 +226,33 @@ h1 {
 }
 
 /** footer */
-footer{
+footer {
+    display: flex;
+    flex-direction: column;
     background-color: #331b05;
-    color: #f0e6dc;
-    margin-top: 20px;
+    margin-top: 10px;
     height: 30vh;
 }
 
-#texto1{
+footer * {
+    color: #f0e6dc;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+#texto1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 20px;
 }
 
-#info{
+#info {
     display: flex;
     align-items: center;
-    justify-content:space-around;
-}
-
-#enlaces{
-    text-decoration: none;
-    color: #f0e6dc;
+    justify-content: space-around;
 }
